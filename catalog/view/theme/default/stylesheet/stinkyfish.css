@@ -1,0 +1,80 @@
+/* Overrides for default Opencart theme for Stinkyfish store */
+body {
+    background-color: #19191b;
+    color: #eee;
+}
+
+a {
+    color: #ffff0a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00b0f4;
+}
+
+#top {
+    background-color: #272727;
+}
+
+#top .btn-link, #top-links li, #top-links a {
+    color: #eee;
+    text-shadow: none;
+}
+
+#menu {
+    background-color: #353535;
+    background-image: linear-gradient(to bottom, #424242, #272727);
+    border-color: #424242 #424242 #353535;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu {
+    background-color: #353535;
+}
+
+.dropdown-menu li > a:hover, #menu .see-all:hover, #menu .see-all:focus {
+    background-color: #ffff0a;
+    background-image: linear-gradient(to bottom, #ffff0a, #00b0f4);
+}
+
+#menu .dropdown-inner a {
+    color: #eee;
+    font-size: 1.3rem;
+}
+
+#cart .dropdown-menu {
+    background-color: #222;
+}
+
+.panel {
+    background-color: #222;
+    color: #ccc;
+}
+
+.panel-default .panel-heading {
+    background-color: #444;
+    color: #ffff0a;
+}
+
+.product-thumb {
+    padding-top: 10px;
+    border: 1px solid #89929e;
+    border-radius: 7px;
+}
+
+.product-thumb .button-group button {
+    background-color: #272727;
+    color: #00b0f4;
+}
+
+.thumbnail {
+    background-color: white;
+}
+
+.breadcrumb {
+    background-color: #272727;
+}
+
+.breadcrumb li {
+    text-shadow: none;
+}
