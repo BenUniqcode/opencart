@@ -39,7 +39,22 @@
             {% if review_status %}
             <li><a href="#tab-review" data-toggle="tab">{{ tab_review }}</a></li>
             {% endif %}
+            <!-- 2018-03-10 BW Show file option in a tab instead of with the other Available Options. NB This code assumes only one 'file' option. -->
+            <!-- 2018-03-22 BW Originally tried to take file options out of the 'options' array to avoid having to skip over them elsewhere, but it didn't work, so there is also a change further down -->
+            {% if options %}
+              {% set product_file_option = false %}
+              {% for option in options %}
+                {% if option.type == 'file' %}
+                  {% set product_file_option = option %}
+                {% endif %}
+              {% endfor %}
+              {% if product_file_option %}
+                <li><a href="#tab-upload" data-toggle="tab">{{ tab_upload }}</a></li>
+              {% endif %}
+            {% endif %}
+
           </ul>
+
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description">{{ description }}</div>
             {% if attribute_groups %}
@@ -108,7 +123,19 @@
                 {% endif %}
               </form>
             </div>
-            {% endif %}</div>
+            {% endif %}
+            <!-- 2018-03-10 BW File option tab pane -->
+            {% if product_file_option %}
+            {% set option = product_file_option %}
+            <div class="tab-pane" id="tab-upload">
+              <div class="form-group">
+                <label class="control-label">Upload a picture of yourself using this product</label>
+                <button type="button" id="button-upload{{ option.product_option_id }}" data-loading-text="{{ text_loading }}" class="btn btn-default btn-block"><i class="fa fa-upload"></i> {{ button_upload }}</button>
+                <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option{{ option.product_option_id }}" />
+              </div>
+            </div>
+            {% endif %}
+          </div>
         </div>
         {% if column_left or column_right %}
         {% set class = 'col-sm-6' %}
@@ -221,6 +248,8 @@
               <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
             </div>
             {% endif %}
+            <!-- 2018-03-22 BW Originally tried to take file options out of the 'options' array to avoid having to skip over them, but it didn't work, so just comment this out -->
+            <!--
             {% if option.type == 'file' %}
             <div class="form-group{% if option.required %} required {% endif %}">
               <label class="control-label">{{ option.name }}</label>
@@ -228,6 +257,7 @@
               <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option{{ option.product_option_id }}" />
             </div>
             {% endif %}
+            -->
             {% if option.type == 'date' %}
             <div class="form-group{% if option.required %} required {% endif %}">
               <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
