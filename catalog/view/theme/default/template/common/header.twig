@@ -26,6 +26,7 @@
 {% for style in styles %}
 <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
 {% endfor %}
+<link href="catalog/view/theme/default/stylesheet/stinkyfish.css" rel="stylesheet">
 {% for script in scripts %}
 <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}
@@ -43,7 +44,7 @@
     {{ language }}
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li><a href="{{ contact }}"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span></li>
+        <li><a href="{{ contact }}"><i class="fa fa-envelope"></i></a> <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span></li>
         <li class="dropdown"><a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_account }}</span> <span class="caret"></span></a>
           <ul class="dropdown-menu dropdown-menu-right">
             {% if logged %}
