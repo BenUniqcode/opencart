@@ -25,29 +25,22 @@
       <hr>
       {% endif %}
       {% if categories %}
-      <h3>{{ text_refine }}</h3>
-      {% if categories|length <= 5 %}
+      <!-- 2018-04-18 BW Remove pointless/confusing Refine Search heading <h3>{{ text_refine }}</h3> -->
+      <!-- 2018-04-18 BW Show category thumbnails instead of a boring textual ul -->
       <div class="row">
-        <div class="col-sm-3">
-          <ul>
-            {% for category in categories %}
-            <li><a href="{{ category.href }}">{{ category.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+        {% for category in categories %}
+          <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="product-thumb">
+              <div class="image">
+                <a href="{{ category.href }}"><img src="{{ category.thumb }}" alt="{{ category.name }}" title="{{ category.name }}" class="img-responsive" /></a>
+              </div>
+              <div class="category-list-caption">
+                <h4><a href="{{ category.href }}">{{ category.name }}</a></h4>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
       </div>
-      {% else %}
-      <div class="row">{% for category in categories|batch((categories|length / 4)|round(1, 'ceil')) %}
-        <div class="col-sm-3">
-          <ul>
-            {% for child in category %}
-            <li><a href="{{ child.href }}">{{ child.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}</div>
-      <br />
-      {% endif %}
       {% endif %}
       {% if products %}
       <div class="row">
