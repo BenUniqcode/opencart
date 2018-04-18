@@ -34,7 +34,7 @@
         &nbsp;({{ weight }})
         {% endif %} </h1>
       <form action="{{ action }}" method="post" enctype="multipart/form-data">
-        <div class="table-responsive">
+        <div class="xtable-responsive"><!-- Removed table-responsive class because it cuts off the right-hand side of the table in a non-obvious way on a phone screen. Although it's scrollable, that's not obvious as mobile browsers tend to hide scrollbars these days. Without this class, the table gets squished but more of its contents are visible on screen and it's more obvious that the remainder is off to the right. Scrolling right to view it moves the whole page, but it makes more sense.  -->
           <table class="table table-bordered">
             <thead>
               <tr>

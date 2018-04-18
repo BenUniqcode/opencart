@@ -4,7 +4,7 @@ body {
     color: #eee;
 }
 
-a {
+a,legend {
     color: #ffff0a;
 }
 
@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-menu li > a:hover, #menu .see-all:hover, #menu .see-all:focus {
     background-color: #ffff0a;
-    background-image: linear-gradient(to bottom, #ffff0a, #00b0f4);
 }
 
 #menu .dropdown-inner a {
@@ -62,9 +61,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 7px;
 }
 
+.product-thumb .price {
+    color: white;
+    font-size: 16px;
+}
+
+.product-thumb .button-group {
+    border-top: 1px solid #89929e;
+}
+
 .product-thumb .button-group button {
     background-color: #272727;
     color: #00b0f4;
+}
+
+.product-thumb .button-group button + button {
+    border-left: 1px solid #89929e;
 }
 
 .thumbnail {
@@ -73,8 +85,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .breadcrumb {
     background-color: #272727;
+    border: 1px solid #89929e;
 }
 
 .breadcrumb li {
     text-shadow: none;
+}
+
+.breadcrumb > li:after {
+    border-color: #89929e;
+}
+
+.list-group-item, .list-group a, a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    background-color: #272727;
+    border: 1px solid #89929e;
+}
+
+.list-group a.active, .list-group a.active:hover, .list-group a:hover {
+    color: white;
+    text-shadow: none;
+    background-color: #424242;
+    border: 1px solid #89929e;
+}
+
+.alert-success {
+    background-color: #272727;
+    color: #3ca030;
+    border-color: green;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+    right: 0;
+}
+
+.alert-danger {
+    background-color: #ee4040;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-content {
+    background-color: #272727;
 }
