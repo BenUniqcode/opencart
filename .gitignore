@@ -4,7 +4,6 @@
 /image/watermark*
 
 # Config and Htaccess Files
-/.htaccess
 /config.php
 /admin/config.php
 
