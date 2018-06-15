@@ -1,0 +1,90 @@
+{{ header }}
+{{ column_left }}
+<div id="content">
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="pull-right">
+                <button type="submit" form="form-gmap-geo-location" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+                <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+            <h1>{{ heading_title }}</h1>
+            <ul class="breadcrumb">
+                {% for breadcrumbs in breadcrumb %}
+                    <li><a href="{{ breadcrumb['href'] }}">{{ breadcrumb['text'] }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        {% if error_warning %}
+            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+        {% endif %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+            </div>
+            <div class="panel-body">
+                <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-gmap-geo-location" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="module_gmap_geo_address_status">{{ entry_status }}</label>
+                        <div class="col-sm-10">
+                            <select name="module_gmap_geo_address_status" id="module_gmap_geo_address_status" class="form-control">
+                                {% if module_gmap_geo_address_status %}
+                                    <option value="1" selected="selected">{{ text_enabled }}</option>
+                                    <option value="0">{{ text_disabled }}</option>
+                                {% else %}
+                                    <option value="1">{{ text_enabled }}</option>
+                                    <option value="0" selected="selected">{{ text_disabled }}</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="module_gmap_geo_address_map_address">{{ entry_map_address }}</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="module_gmap_geo_address_map_address" name="module_gmap_geo_address_map_address" placeholder="{{ entry_map_address }}" value="{{ module_gmap_geo_address_map_address }}"  class="form-control" />
+                            {% if error_map_address %}
+                                <div class="text-danger">{{ error_map_address }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="module_gmap_geo_address_map_address"></label>
+                        <div class="col-xs-10">
+                            <div class="gmap-canvas"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Gmap Geo complete Plugin initialization-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var options = {
+            map: ".gmap-canvas",
+            //location: 'Chennai, Tamil Nadu, India',
+            mapOptions: {
+                scrollwheel: true
+              }
+        };
+        $("#module_gmap_geo_address_map_address").geocomplete(options)
+                .bind("geocode:result", function (event, result) {
+                    //console.log("Result: " + result.formatted_address);
+                    var map = $("#gmap-address").geocomplete("map");
+                    map.setZoom(12);
+                    //console.log(map);
+                })
+                .bind("geocode:error", function (event, status) {
+                    console.log("ERROR: " + status);
+                })
+                .bind("geocode:multiple", function (event, results) {
+                    //console.log("Multiple: " + results.length + " results found");
+                });
+        $("#module_gmap_geo_address_map_address").trigger('geocode');
+    });
+
+</script>
+{{ footer }}

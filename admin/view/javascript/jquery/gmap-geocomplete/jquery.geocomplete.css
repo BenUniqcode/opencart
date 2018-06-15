@@ -1,0 +1,7 @@
+/* Gmap Autocomplete Popup CSS */
+
+.gmap-canvas{
+    float:left;
+    width:300px;
+    height: 300px;
+}

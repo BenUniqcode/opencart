@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-xs-6">
+        <!--Gmap Autocomplete-->
+        <form role="form" class="form-horizontal">
+            <div class="box-body">
+                <h3>{{ entry_map_address }}</h3>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <p class="form-control-static">{{ gmap_geo_address }}</p>
+                        <!--Set Geo location value-->
+                        <input type="hidden" class="" id="gmap-address" placeholder="Gmap Address" value="{{ gmap_geo_address }}">
+                        <!--/.Set Geo location value-->
+                    </div>
+                </div>
+                <h3>{{ entry_map_geo_address }}</h3>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="gmap-canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--/.Gmap Autocomplete-->
+    </div>
+</div>
+<!--Gmap Geocomplete Plugin-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var options = {
+            map: ".gmap-canvas",
+            //location: 'Chennai, Tamil Nadu, India',
+            mapOptions: {
+                scrollwheel: true
+              }
+        };
+
+        $("#gmap-address").geocomplete(options)
+                .bind("geocode:result", function (event, result) {
+                    //console.log("Result: " + result.formatted_address);
+                    //var map = $("#gmap-address").geocomplete("map");
+                    //map.setZoom(9);
+                    //map.setCenter("Chennai, Tamil Nadu, India");
+                    //console.log(map);
+                })
+                .bind("geocode:error", function (event, status) {
+                    console.log("ERROR: " + status);
+                })
+                .bind("geocode:multiple", function (event, results) {
+                    //console.log("Multiple: " + results.length + " results found");
+                });
+         $("#gmap-address").trigger("geocode");
+    });
+</script>

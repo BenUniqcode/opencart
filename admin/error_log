@@ -1,0 +1,383 @@
+[28-Mar-2018 18:19:17 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category_to_category' doesn't exist<br />Error No: 1146<br />SELECT google_base_category_id, (SELECT name FROM `google_base_category` gbc WHERE gbc.google_base_category_id = gbc2c.google_base_category_id) AS google_base_category, category_id, (SELECT name FROM `category_description` cd WHERE cd.category_id = gbc2c.category_id AND cd.language_id = '1') AS category FROM `google_base_category_to_category` gbc2c ORDER BY google_base_category ASC' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT google_b...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(87): DB->query('SELECT google_b...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getCategories(0, 10)
+#3 /home/jzvdccep/demo_storage/modific in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:32 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:34 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:36 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:37 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:44 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:47 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[28-Mar-2018 18:19:53 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category' doesn't exist<br />Error No: 1146<br />SELECT * FROM `google_base_category` WHERE name LIKE '%%' ORDER BY name ASC LIMIT 0,5' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(57): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getGoogleBaseCategories(Array)
+#3 /home/jzvdccep/demo_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/demo.stin in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[30-Mar-2018 16:08:03 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfocdemo2018.google_base_category_to_category' doesn't exist<br />Error No: 1146<br />SELECT google_base_category_id, (SELECT name FROM `google_base_category` gbc WHERE gbc.google_base_category_id = gbc2c.google_base_category_id) AS google_base_category, category_id, (SELECT name FROM `category_description` cd WHERE cd.category_id = gbc2c.category_id AND cd.language_id = '1') AS category FROM `google_base_category_to_category` gbc2c ORDER BY google_base_category ASC' in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT google_b...')
+#1 /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/admin/model/extension/feed/google_base.php(87): DB->query('SELECT google_b...')
+#2 [internal function]: ModelExtensionFeedGoogleBase->getCategories(0, 10)
+#3 /home/jzvdccep/demo_storage/modific in /home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[22-Apr-2018 21:28:17 UTC] PHP Warning:  require_once(/home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/startup.php): failed to open stream: No such file or directory in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/index.php on line 17
+[22-Apr-2018 21:28:17 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/startup.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/index.php on line 17
+[22-Apr-2018 21:29:44 UTC] PHP Warning:  require_once(/home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/startup.php): failed to open stream: No such file or directory in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/index.php on line 17
+[22-Apr-2018 21:29:44 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/jzvdccep/public_html/demo.stinkyfishclothing.co.uk/system/startup.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/index.php on line 17
+[23-Apr-2018 05:29:01 UTC] PHP Fatal error:  Class 'Controllersettingsetting' not found in /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/action.php on line 71
+[23-Apr-2018 12:34:17 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:53:21 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:55:28 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:56:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:56:43 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:57:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:57:23 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 12:57:40 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:00:53 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:07:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:11:13 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:12:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18882' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18882')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:15:34 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18878' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18878')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 13:17:03 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18878' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18878')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[23-Apr-2018 15:56:27 UTC] PHP Fatal error:  Class 'Controllersettingsetting' not found in /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/action.php on line 71
+[23-Apr-2018 16:06:37 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:06:40 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:06:45 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:07:52 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:07:55 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:08:06 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:09:24 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:09:27 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:10:10 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:10:21 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:11:25 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:11:26 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:11:33 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:13:49 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[23-Apr-2018 16:13:51 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected character "\" in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php:284
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header }}{{ ...', 'catalog/product...')
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}{{ ...', 'catalog/product...')
+#5 /home/jzvdccep/stinkyfishclothi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Lexer.php on line 284
+[24-Apr-2018 20:42:50 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Runtime' with message 'Invalid escaping strategy "" (valid ones: html, js, url, css, html_attr) in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php:1127
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Environment.php(403) : eval()'d code(3526): twig_escape_filter(Object(Twig_Environment), 'Accessories', NULL)
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(387): __TwigTemplate_0c099f1fd269e32928658689bc48ec25089ae8d988556087b5cc6ee7c0a24598->doDisplay(Array, Array)
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(355): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(366): Twig_Template->display(Array)
+#4 /home/jzvdccep/stinkyfishclothing_opencart_storage/modi in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php on line 1127
+[24-Apr-2018 20:42:52 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Runtime' with message 'Invalid escaping strategy "" (valid ones: html, js, url, css, html_attr) in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php:1127
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/cache/2c/2c1269a270c6866f9367e85e00092a739cab1a7cd3cf5bb736cc90cc69270a22.php(3526): twig_escape_filter(Object(Twig_Environment), 'Accessories', NULL)
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(387): __TwigTemplate_0c099f1fd269e32928658689bc48ec25089ae8d988556087b5cc6ee7c0a24598->doDisplay(Array, Array)
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(355): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(366): Twig_Template->display(Array)
+#4 /home/jzvdccep/stinkyfishclothing_openca in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php on line 1127
+[24-Apr-2018 20:42:53 UTC] PHP Fatal error:  Uncaught exception 'Twig_Error_Runtime' with message 'Invalid escaping strategy "" (valid ones: html, js, url, css, html_attr) in "catalog/product_form.twig" at line 1562.' in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php:1127
+Stack trace:
+#0 /home/jzvdccep/stinkyfishclothing_opencart_storage/cache/2c/2c1269a270c6866f9367e85e00092a739cab1a7cd3cf5bb736cc90cc69270a22.php(3526): twig_escape_filter(Object(Twig_Environment), 'Accessories', NULL)
+#1 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(387): __TwigTemplate_0c099f1fd269e32928658689bc48ec25089ae8d988556087b5cc6ee7c0a24598->doDisplay(Array, Array)
+#2 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(355): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Template.php(366): Twig_Template->display(Array)
+#4 /home/jzvdccep/stinkyfishclothing_openca in /home/jzvdccep/stinkyfishclothing_opencart_storage/vendor/twig/twig/lib/Twig/Extension/Core.php on line 1127
+[25-Apr-2018 12:52:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18796' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18796')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[25-Apr-2018 12:55:00 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18804' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18804')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[01-May-2018 09:23:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: Table 'jzvdccep_sfoc.worldpay_order' doesn't exist<br />Error No: 1146<br />SELECT * FROM `worldpay_order` WHERE `order_id` = '18850' LIMIT 1' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM `...')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/model/extension/payment/worldpay.php(88): DB->query('SELECT * FROM `...')
+#2 [internal function]: ModelExtensionPaymentWorldpay->getOrder('18850')
+#3 /home/jzvdccep/stinkyfishclothing_opencart_storage/modification/system/engine/loader.php(248): call_user_func_array(Array, Array)
+#4 [internal function]: Loader->{closure}(Array, Array)
+#5 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/engine/proxy.php(47): call_user_func_array(Object(Closure), Array)
+#6 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/controller/extension/ in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 40
+[17-May-2018 21:37:21 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error: <br />Error No: ' in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'jzvdccep_sfoc', 'j0WVJZLr2M24pnH...', 'jzvdccep_sfoc', '3306')
+#1 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'jzvdccep_sfoc', 'j0WVJZLr2M24pnH...', 'jzvdccep_sfoc', '3306')
+#2 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/startup.php(104): require_once('/home/jzvdccep/...')
+#3 /home/jzvdccep/public_html/stinkyfishclothing.co.uk/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home/jzvdccep/public_html/stinkyfishclothing.co.uk/system/library/db/mysqli.php on line 10
