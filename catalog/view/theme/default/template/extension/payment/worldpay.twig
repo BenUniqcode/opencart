@@ -99,30 +99,55 @@
 {% endif %}
 
         Worldpay.templateSaveButton = false;
-        Worldpay.useTemplate('payment-new-form', 'paymentDetailsHere', 'inline', function (obj) {
-          var _el = document.createElement('input');
-          _el.value = obj.token;
-          _el.type = 'hidden';
-          _el.name = 'token';
-          document.getElementById('payment-new-form').appendChild(_el);
-		  document.getElementById('payment-new-form').submit();
-        });
+        Worldpay.useTemplateForm({
+		form: 'payment-new-form', 
+		paymentSection: 'paymentDetailsHere', 
+		display: 'inline', 
+		callback: function (obj) {
+          		var _el = document.createElement('input');
+          		_el.value = obj.token;
+          		_el.type = 'hidden';
+          		_el.name = 'token';
+          		document.getElementById('payment-new-form').appendChild(_el);
+		  	document.getElementById('payment-new-form').submit();
+        	},
+		beforeSubmit: function() {
+			// Disable the submit button to prevent double-firing
+          		$('#button-confirm').prop('disabled', true);
+		},
+		validationError: function() {
+			// Re-enable the submit button if there was a validation error
+          		$('#button-confirm').prop('disabled', false);
+		},
+	}):
 
         //Submit form
         $('input[type=\'submit\']').on('click', function () {
-          var existing = $('input[name=\'existing-card\']:checked').val();
-          if (existing === '1') {
-            var form = document.getElementById('payment-existing-form');
-            Worldpay.useForm(form, function (status, response) {
-              if (response.error || status != 200) {
-                Worldpay.handleError(form, document.getElementById('payment-errors'), response.error);
-              } else {
-                form.submit();
-              }
-            }, true);
-          } else {
-            Worldpay.submitTemplateForm();
-          }
+        	var existing = $('input[name=\'existing-card\']:checked').val();
+        	if (existing === '1') {
+        		var form = document.getElementById('payment-existing-form');
+        		Worldpay.useOwnForm({
+				form: form, 
+				callback: function (status, response) {
+              				if (response.error || status != 200) {
+                				Worldpay.handleError(form, document.getElementById('payment-errors'), response.error);
+              				} else {
+                				form.submit();
+              				}
+            			}, 
+				useReusableToken: true
+               			beforeSubmit: function() {
+                        		// Disable the submit button to prevent double-firing
+                        		$('#button-confirm').prop('disabled', true);
+                		},
+                		validationError: function() {
+                        		// Re-enable the submit button if there was a validation error
+                        		$('#button-confirm').prop('disabled', false);
+                		},
+			});
+        	} else {
+        		Worldpay.submitTemplateForm();
+        	}
         });
       });
 
