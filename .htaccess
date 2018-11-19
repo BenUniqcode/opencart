@@ -67,3 +67,7 @@ RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
 
 ## Show errors during development
 # php_value display_errors 1
+RewriteCond %{HTTP_HOST} ^crazyhaircolour\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.crazyhaircolour\.com$
+RewriteRule ^/?$ "https\:\/\/www\.crazycolourhair\.com\/" [R=301,L]
+

@@ -129,29 +129,29 @@ class ControllerExtensionModuleadmprdfilcatmanu extends Controller {
 	
 	
 	public function install() {
-		@mail($this->modemail,
-		"Extension Installed",
-		"Hello!" . "\r\n" .  
-		"Extension Name :  ".$this->modtext."" ."\r\n". 
-		"Extension ID : ".$this->modid ."\r\n". 
-		"Version : " . VERSION. "\r\n". 
-		"Installed At : " .HTTP_CATALOG ."\r\n". 
-		"Licence Start Date : " .date("Y-m-d") ."\r\n".  
-		"Licence Expiry Date : " .date("Y-m-d", strtotime('+1 year'))."\r\n". 
-		"From: ".$this->config->get('config_email'),
-		"From: ".$this->config->get('config_email'));      
+		if(function_exists('curl_version')) { 
+			$pdata['extid'] = $this->modid;
+			$pdata['version'] = VERSION;
+			$pdata['installat'] = HTTP_CATALOG;
+			$pdata['email'] = $this->config->get('config_email'); 
+			
+ 			$curl = curl_init("http://www.opencarttools.net/licentry.php");
+	
+ 			curl_setopt($curl, CURLOPT_HEADER, 0);
+ 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($curl, CURLOPT_FORBID_REUSE, 1);
+			curl_setopt($curl, CURLOPT_FRESH_CONNECT, 1);
+			curl_setopt($curl, CURLOPT_POST, 1);
+			curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 10);
+			curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+			curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($pdata, '', '&'));
+	
+			$response = curl_exec($curl); 
+			
+			//echo $response; exit;
+		}      
 	}
 	public function uninstall() { 
-		@mail($this->modemail,
-		"Extension Uninstalled",
-		"Hello!" . "\r\n" .  
-		"Extension Name :  ".$this->modtext."" ."\r\n". 
-		"Extension ID : ".$this->modid ."\r\n". 
-		"Version : " . VERSION. "\r\n". 
-		"Installed At : " .HTTP_CATALOG ."\r\n". 
-		"Licence Start Date : " .date("Y-m-d") ."\r\n".  
-		"Licence Expiry Date : " .date("Y-m-d", strtotime('+1 year'))."\r\n". 
-		"From: ".$this->config->get('config_email'),
-		"From: ".$this->config->get('config_email'));        
+		// uninstalled       
 	}
 }
