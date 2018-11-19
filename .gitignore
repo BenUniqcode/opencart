@@ -60,3 +60,8 @@
 
 # IDE Project files
 /.idea
+
+## 2018-11-19 BW Ignore error_log
+/error_log
+/admin/error_log
+
