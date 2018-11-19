@@ -119,7 +119,7 @@
 			// Re-enable the submit button if there was a validation error
           		$('#button-confirm').prop('disabled', false);
 		},
-	}):
+	});
 
         //Submit form
         $('input[type=\'submit\']').on('click', function () {
@@ -135,7 +135,7 @@
                 				form.submit();
               				}
             			}, 
-				useReusableToken: true
+				useReusableToken: true,
                			beforeSubmit: function() {
                         		// Disable the submit button to prevent double-firing
                         		$('#button-confirm').prop('disabled', true);
