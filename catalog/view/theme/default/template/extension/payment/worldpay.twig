@@ -98,6 +98,21 @@
 	        });
 {% endif %}
 
+	// Define beforeSubmit and validationError functions here, as they are the same for both types of form (Template and Own) so this avoids repetition
+	var MyFuncs = {
+		beforeSubmit: function() {
+			// Disable the submit button to prevent double-firing. Then return true, otherwise the submit will be cancelled.
+			$('#button-confirm').prop('disabled', true);
+			return true;
+		},
+		validationError: function(obj) {
+			// Re-enable the submit button if there was a validation error caught prior to submission, so user can try again. NB null, not false. 
+			// Unlike beforeSubmit, this function doesn't have to return true
+			// I'm not sure why obj is passed in when it's not used, but that's how it is in their documentation
+			$('#button-confirm').prop('disabled', null);
+		}
+	};
+		
         Worldpay.templateSaveButton = false;
         Worldpay.useTemplateForm({
 		form: 'payment-new-form', 
@@ -111,14 +126,8 @@
           		document.getElementById('payment-new-form').appendChild(_el);
 		  	document.getElementById('payment-new-form').submit();
         	},
-		beforeSubmit: function() {
-			// Disable the submit button to prevent double-firing
-          		$('#button-confirm').prop('disabled', true);
-		},
-		validationError: function() {
-			// Re-enable the submit button if there was a validation error
-          		$('#button-confirm').prop('disabled', false);
-		},
+		beforeSubmit: MyFuncs.beforeSubmit,
+		validationError: MyFuncs.validationError,
 	});
 
         //Submit form
@@ -136,14 +145,8 @@
               				}
             			}, 
 				useReusableToken: true,
-               			beforeSubmit: function() {
-                        		// Disable the submit button to prevent double-firing
-                        		$('#button-confirm').prop('disabled', true);
-                		},
-                		validationError: function() {
-                        		// Re-enable the submit button if there was a validation error
-                        		$('#button-confirm').prop('disabled', false);
-                		},
+				beforeSubmit: MyFuncs.beforeSubmit,
+				validationError: MyFuncs.validationError,
 			});
         	} else {
         		Worldpay.submitTemplateForm();
