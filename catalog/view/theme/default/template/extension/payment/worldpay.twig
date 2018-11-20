@@ -43,7 +43,7 @@
 	  </fieldset>
 	  <div class="buttons">
 		<div class="pull-right">
-		  <input type="submit" value="{{ button_confirm }}" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary" />
+		  <input type="submit" value="{{ button_confirm }}" id="button-confirm-existing" data-loading-text="{{ text_loading }}" class="btn btn-primary button-confirm" />
 		</div>
 	  </div>
 	</form>
@@ -67,7 +67,7 @@
 	</fieldset>
 	<div class="buttons">
 	  <div class="pull-right">
-		<input type="submit" value="{{ button_confirm }}" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary" />
+		<input type="submit" value="{{ button_confirm }}" id="button-confirm-new" data-loading-text="{{ text_loading }}" class="btn btn-primary button-confirm" />
 	  </div>
 	</div>
   </form>
@@ -102,14 +102,14 @@
 	var MyFuncs = {
 		beforeSubmit: function() {
 			// Disable the submit button to prevent double-firing. Then return true, otherwise the submit will be cancelled.
-			$('#button-confirm').prop('disabled', true);
+			$('.button-confirm').prop('disabled', true);
 			return true;
 		},
 		validationError: function(obj) {
 			// Re-enable the submit button if there was a validation error caught prior to submission, so user can try again. NB null, not false. 
 			// Unlike beforeSubmit, this function doesn't have to return true
 			// I'm not sure why obj is passed in when it's not used, but that's how it is in their documentation
-			$('#button-confirm').prop('disabled', null);
+			$('.button-confirm').prop('disabled', null);
 		}
 	};
 		
